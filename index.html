@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffe5ef">
+<title>إلى 𝒲𝑒𝒽𝒶𝒹 ౨ৎ</title>
+<style>
+:root{--pink:#f5a9c5;--deep:#b94d78;--cream:#fff8fb;--ink:#633849}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at 15% 10%,#fff 0 8%,transparent 30%),linear-gradient(135deg,#ffeaf2,#fff7fb 55%,#fbd9e7);min-height:100vh;overflow-x:hidden}
+main{width:min(760px,92%);margin:auto;padding:34px 0 70px}
+.hero{text-align:center;padding:42px 20px 30px;border:1px solid #f7c7d9;background:#ffffffb8;border-radius:30px;box-shadow:0 18px 55px #c76b8b20;position:relative;overflow:hidden}
+.kicker{letter-spacing:2px;color:var(--deep);font-size:.8rem}
+h1{font-size:clamp(2rem,8vw,4rem);margin:12px 0;color:#b94d78}
+.subtitle{font-size:1.05rem;line-height:1.9;max-width:520px;margin:auto}
+.heart{font-size:2rem;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.18)}}
+section{margin-top:22px;padding:24px;background:#ffffffd9;border:1px solid #f7c7d9;border-radius:24px;box-shadow:0 12px 35px #c76b8b12}
+h2{margin:0 0 14px;color:#b94d78;font-size:1.35rem}
+.message{font-size:1.1rem;line-height:2;white-space:pre-line}
+.counter{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center}
+.counter div{background:#fff0f6;border-radius:18px;padding:15px 8px}
+.counter strong{display:block;font-size:1.8rem;color:#b94d78}
+.counter span{font-size:.82rem}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:17px;border:2px solid #f7c7d9}
+.placeholder{background:#fff0f6;aspect-ratio:1/1;border-radius:17px;display:grid;place-items:center;color:#bd7892;text-align:center;padding:12px}
+button,.filelabel{border:0;background:#c85d87;color:white;padding:12px 18px;border-radius:999px;font:inherit;cursor:pointer;display:inline-block}
+button.secondary{background:#ffe3ee;color:#a7446c}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+input[type=file],input[type=date],input[type=text],textarea{font:inherit;color:var(--ink);border:1px solid #edb5ca;background:#fffafd;border-radius:12px;padding:10px;max-width:100%}
+textarea{width:100%;min-height:95px}
+small,.hint{color:#966579;line-height:1.7}
+footer{text-align:center;padding:25px;color:#a45a78}
+.floating{position:fixed;inset:auto 0 0;pointer-events:none;opacity:.35;font-size:22px;white-space:nowrap;animation:rise 18s linear infinite}
+@keyframes rise{from{transform:translateY(30vh)}to{transform:translateY(-120vh)}}
+@media(max-width:480px){.counter{grid-template-columns:repeat(3,1fr)} section{padding:19px}.hero{padding:34px 15px}}
+</style>
+</head>
+<body>
+<div class="floating">♡　♥　♡　౨ৎ　♡　♥　♡　౨ৎ　♡　♥　♡</div>
+<main>
+  <header class="hero">
+    <div class="kicker">A LITTLE LOVE NOTE</div>
+    <div class="heart">♡</div>
+    <h1>𝒲𝑒𝒽𝒶𝒹 ౨ৎ</h1>
+    <p class="subtitle">إلى أجمل صدفة، وأحنّ قلب…<br>هذا المكان الصغير معمول عشان يذكّرك إنك غالية، وإن وجودك بيخلّي الأيام أحلى. 💗</p>
+    <p style="color:#bd6a8a;margin:18px 0 0">من قلبي إلى قلبك، بكل الحب ♡</p>
+  </header>
+
+  <section>
+    <h2>💌 رسالة ليك</h2>
+    <p class="message" id="loveMessage">يا وِهاد، يمكن الكلام ما يوصف مكانتك، لكن حبيت أعمل ليك حاجة صغيرة تشبه جمال روحك.
+وجودك في حياتي فرحة، وضحكتك من الحاجات البتخلّي يومي أحلى.
+كل يوم بتمنى ليك سعادة تليق بقلبك، وأيام مليانة حب وطمأنينة.
+إنتِ حكاية جميلة، ولسه أجمل فصولها جاية. ♡</p>
+    <p class="hint">تقدر تغيّر الرسالة من قسم «تخصيص الهدية» تحت.</p>
+  </section>
+
+  <section>
+    <h2>⏳ أيام حلوة من يومنا</h2>
+    <p class="hint">اختار تاريخ البداية، والعداد بحسب الأيام من التاريخ ده.</p>
+    <div class="controls" style="margin-bottom:15px">
+      <label for="startDate">تاريخ البداية:</label>
+      <input type="date" id="startDate">
+    </div>
+    <div class="counter">
+      <div><strong id="days">0</strong><span>يوم</span></div>
+      <div><strong id="hours">0</strong><span>ساعة</span></div>
+      <div><strong id="minutes">0</strong><span>دقيقة</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>📷 لحظاتنا الجميلة</h2>
+    <p class="hint">اختار صور من جهازك عشان تظهر في المعرض. الصور ما بترتفع لأي مكان؛ بتظهر عندك في المتصفح فقط.</p>
+    <div class="gallery" id="gallery">
+      <img src="assets/memory-1.jpeg" alt="ذكرى جميلة 1" loading="lazy">
+      <img src="assets/memory-2.jpeg" alt="ذكرى جميلة 2" loading="lazy">
+      <img src="assets/memory-3.jpeg" alt="ذكرى جميلة 3" loading="lazy">
+      <img src="assets/memory-4.jpeg" alt="ذكرى جميلة 4" loading="lazy">
+      <img src="assets/memory-5.jpeg" alt="ذكرى جميلة 5" loading="lazy">
+      <img src="assets/memory-6.jpeg" alt="ذكرى جميلة 6" loading="lazy">
+      <img src="assets/memory-7.jpeg" alt="ذكرى جميلة 7" loading="lazy">
+    </div>
+    <div class="controls" style="margin-top:15px">
+      <label class="filelabel" for="photos">إضافة صور أخرى من جهازك</label>
+      <input id="photos" type="file" accept="image/*" multiple hidden>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎵 أغنيتنا</h2>
+    <p class="hint">أضفت ليك لحن عيد ميلاد موسيقي ناعم يشتغل من الموقع. تقدر كمان تختار أغنية من جهازك للاستماع الشخصي.</p>
+    <div class="controls">
+      <label class="filelabel" for="music">اختار ملف موسيقى</label>
+      <input id="music" type="file" accept="audio/*" hidden>
+      <button id="play" type="button" class="secondary">▶ تشغيل</button>
+      <button id="pause" type="button" class="secondary">Ⅱ إيقاف</button>
+    </div>
+    <audio id="audio" src="assets/birthday-melody.wav" controls style="width:100%;margin-top:15px"></audio>
+  </section>
+
+  <section>
+    <h2>🎀 خصّص الهدية</h2>
+    <label for="customMessage">اكتب رسالتك الخاصة:</label>
+    <textarea id="customMessage" placeholder="اكتب كلامك من قلبك..."></textarea>
+    <div class="controls" style="margin-top:12px">
+      <button id="saveMessage">حفظ الرسالة على هذا الجهاز</button>
+      <button id="resetMessage" class="secondary">إرجاع الرسالة الأصلية</button>
+    </div>
+    <p class="hint">ملاحظة: الصور والموسيقى المختارة من جهازك لا تنتقل تلقائياً مع الرابط. عشان الشخص التاني يشوفها ويسمعها، لازم تضمّن ملفات الصور والصوت داخل الموقع قبل نشره.</p>
+  </section>
+  <footer>صُنعت بحب خصيصاً لـ 𝒲𝑒𝒽𝒶𝒹 ౨ৎ<br>♡ ♡ ♡</footer>
+</main>
+<script>
+const original = document.getElementById('loveMessage').textContent;
+const start = document.getElementById('startDate');
+const today = new Date();
+const localDate = new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+start.value = localDate;
+function updateCounter(){
+  if(!start.value)return;
+  const s = new Date(start.value+'T00:00:00');
+  const diff = Math.max(0, Date.now()-s.getTime());
+  document.getElementById('days').textContent=Math.floor(diff/86400000);
+  document.getElementById('hours').textContent=Math.floor(diff/3600000)%24;
+  document.getElementById('minutes').textContent=Math.floor(diff/60000)%60;
+}
+start.addEventListener('change',updateCounter); updateCounter(); setInterval(updateCounter,60000);
+document.getElementById('photos').addEventListener('change',e=>{
+  const gallery=document.getElementById('gallery'); gallery.innerHTML='';
+  [...e.target.files].slice(0,12).forEach(file=>{
+    const img=document.createElement('img'); img.alt='ذكرى جميلة'; img.src=URL.createObjectURL(file); gallery.appendChild(img);
+  });
+});
+const audio=document.getElementById('audio');
+document.getElementById('music').addEventListener('change',e=>{
+  const f=e.target.files[0]; if(f) audio.src=URL.createObjectURL(f);
+});
+document.getElementById('play').onclick=()=>audio.play();
+document.getElementById('pause').onclick=()=>audio.pause();
+const editor=document.getElementById('customMessage');
+document.getElementById('saveMessage').onclick=()=>{
+  const v=editor.value.trim(); if(v){document.getElementById('loveMessage').textContent=v; localStorage.setItem('wehadMessage',v);}
+};
+document.getElementById('resetMessage').onclick=()=>{
+  document.getElementById('loveMessage').textContent=original; editor.value=''; localStorage.removeItem('wehadMessage');
+};
+const saved=localStorage.getItem('wehadMessage'); if(saved){document.getElementById('loveMessage').textContent=saved;editor.value=saved;}
+</script>
+</body>
+</html>
